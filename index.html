@@ -49,20 +49,41 @@
 
     }
 
+    @media (max-width:375px) {
+        .banner1 {
+            background-position: center;
+        }
+
+        .logo {
+            width: 30%;
+            /* background-position: center; */
+            top: 10px;
+        }
+
+        .title {
+            /* height: 50%; */
+            /* background-image: url(./img/game-04.png); */
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            object-fit: contain;
+            bottom: 20px;
+        }
+    }
+
     .banner2 {
         width: 100%;
         height: 1080px;
         background-image: url(./img/game-02.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 
     .content {
-        height: 800px;
+        height: 70%;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        flex-wrap: wrap;
     }
 
 
@@ -100,6 +121,35 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+
+    @media (max-width:375px) {
+        .content {
+            flex-direction: column;
+        }
+
+        .title1 {
+            width: 60%;
+            /* height: 20%; */
+        }
+
+        .title2 {
+            width:60%;
+            /* height: 20%; */
+        }
+
+        .logocc {
+            width: 60%;
+        }
+
+        .download {
+            height: 10%;
+            margin-top: 30px;
+        }
+
+
+
+    }
 </style>
 
 <body>
@@ -118,7 +168,7 @@
         <div class="download">
 
         </div>
-        
+
     </div>
 </body>
 
